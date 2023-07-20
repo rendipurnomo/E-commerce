@@ -3,7 +3,7 @@
 }
 
 .nav__wrapper {
-    @apply flex justify-between py-3 px-8
+    @apply flex justify-between py-4 px-8 items-center
 }
 
 .left {
@@ -19,9 +19,21 @@
 }
 
 .item {
-    @apply flex text-base items-center cursor-pointer hover:text-red-500 transition
+    @apply flex text-base items-center cursor-pointer hover:text-blue-500 transition
 }
 
 .flag {
     @apply w-6 h-4
+}
+
+.icons {
+    @apply flex gap-6 text-gray-700 cursor-pointer items-center
+}
+
+.cart_icons {
+    @apply relative py-2 px-2
+}
+
+.cart_number {
+    @apply absolute text-white text-sm bg-blue-500 w-4 h-4 rounded-full top-0 right-0 flex items-center justify-center
 }

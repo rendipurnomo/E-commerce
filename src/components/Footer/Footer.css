@@ -1,0 +1,35 @@
+.footer {
+    @apply flex flex-col px-8 py-4
+}
+
+.top {
+    @apply flex pb-10
+}
+
+.items {
+    @apply basis-1/4 flex flex-col
+}
+
+.tittle {
+    @apply text-lg font-bold mb-2
+}
+
+.link {
+    @apply font-semibold hover:text-blue-500 transition
+}
+
+.bottom {
+    @apply flex items-center justify-between
+}
+
+.logo {
+    @apply text-2xl font-bold
+}
+
+.copyright {
+    @apply flex items-center
+}
+
+.payment {
+    @apply w-96 
+}

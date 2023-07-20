@@ -51,10 +51,10 @@ const Navbar = () => {
                 <SearchIcon/>
                 <PersonIcon/>
                 <FavoriteIcon/>
-            </div>
             <div className="cart_icons">
                 <ShoppingCartIcon/>
-                <span>0</span>
+                <span className="cart_number">0</span>
+            </div>
             </div>
         </div>
       </div>
