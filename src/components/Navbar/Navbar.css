@@ -1,0 +1,27 @@
+.navbar {
+    @apply h-20
+}
+
+.nav__wrapper {
+    @apply flex justify-between py-3 px-8
+}
+
+.left {
+    @apply flex flex-row gap-6
+}
+
+.center {
+    @apply text-3xl font-bold tracking-wide
+}
+
+.right {
+    @apply flex flex-row gap-6
+}
+
+.item {
+    @apply flex text-base items-center cursor-pointer hover:text-red-500 transition
+}
+
+.flag {
+    @apply w-6 h-4
+}
