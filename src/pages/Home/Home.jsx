@@ -1,11 +1,14 @@
 import React from 'react'
 import './Home.css';
-import { Slider } from "../../components"
+import { Categories, FeaturedProducts, Slider } from "../../components"
 
 const Home = () => {
   return (
     <div className="home">
-      <Slider/>
+      <Slider />
+      <FeaturedProducts type="Featured" />
+      <Categories/>
+      <FeaturedProducts type="Trending" />
     </div>
   )
 }
