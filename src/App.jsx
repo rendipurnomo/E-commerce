@@ -9,7 +9,7 @@ import { Footer, Navbar } from './components';
 
 const Layout = ()=> {
   return (
-    <div className="app">
+    <div className='w-full'>
       <Navbar/>
       <Outlet/>
       <Footer/>
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/:id",
-        element: <Products/>
+        element: <Products />
       },
     ]
 
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }

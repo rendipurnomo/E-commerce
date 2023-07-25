@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <div className="h-20">
+    <div className="w-screen h-20 sticky top-0 bg-white z-50">
       <div className="hidden lg:flex justify-between py-4 px-8 text-base items-center">
         <div className="flex flex-row gap-6">
             <div className="flex text-base items-center cursor-pointer hover:text-blue-500 transition">

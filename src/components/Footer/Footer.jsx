@@ -6,7 +6,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col px-8 py-4'>
+    <div className='w-screen flex flex-col px-8 py-4'>
         <div className="flex pb-10 flex-col md:flex-row">
             <div className="basis-1/4 flex flex-col">
                 <h2 className='text-xl font-bold'>Category</h2>

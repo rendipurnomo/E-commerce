@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Categories = () => {
   return (
     <div className='bg-gray-700 w-screen'>
-    <div className=' w-full h-screen mx-auto px-10 py-10 grid grid-cols-4 gap-3'>
+    <div className=' w-screen h-screen mx-auto px-3 py-4 grid grid-cols-4 gap-3'>
         <div className='w-full h-full overflow-hidden bg-men bg-cover bg-center relative'>
             <Link to="/products/1" className='min-w-[100px]'>
                 <button className='absolute top-0 bottom-0 right-0 left-0 m-auto w-fit h-fit min-w-[100px] bg-white outline-none py-2 px-4 text-blue-900 font-semibold rounded-md'>Men</button>
