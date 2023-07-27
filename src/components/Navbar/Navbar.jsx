@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './Navbar.css';
 import Flag from '../../assets/images/ind.png';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -7,10 +7,12 @@ import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from "react-router-dom"
+import Cart from "../Cart/Cart";
 
 const Navbar = () => {
+    const [open, setOpen]=useState(false);
   return (
-    <div className="w-screen h-20 sticky top-0 bg-white z-50">
+    <div className="w-full h-20 sticky top-0 bg-white z-50 drop-shadow-md">
       <div className="hidden lg:flex justify-between py-4 px-8 text-base items-center">
         <div className="flex flex-row gap-6">
             <div className="flex text-base items-center cursor-pointer hover:text-blue-500 transition">
@@ -51,13 +53,14 @@ const Navbar = () => {
                 <SearchIcon/>
                 <PersonIcon/>
                 <FavoriteIcon/>
-            <div className="relative py-2 px-2">
+            <div className="relative py-2 px-2" onClick={()=>setOpen(!open)}>
                 <ShoppingCartIcon/>
                 <span className="absolute text-white text-sm bg-blue-500 w-4 h-4 rounded-full top-0 right-0 flex items-center justify-center overflow-hidden">0</span>
             </div>
             </div>
         </div>
       </div>
+      {open && <Cart/>}
     </div>
   );
 };
